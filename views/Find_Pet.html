@@ -1,0 +1,87 @@
+<div class="content">
+  <h4>Find a dog/cat</h4>
+  <p>
+    At Nihit's Adoption Center, we find the right pet for you. Find yourself a
+    best friend today and allow it to compagny you into your a wonderful and
+    cozy household.
+  </p>
+  <hr />
+  <h4>Finding a Pet Form</h4>
+  <p>
+    Please fill out the following form with the details of the pet that you are
+    looking for.
+  </p>
+
+  <form
+    action="/available-pets"
+    method="post"
+    onsubmit="return validateFormFind_Pet()"
+  >
+    <fieldset>
+      <legend>Pet Details</legend>
+      <label for="petType">Pet Type:</label>
+      <select id="petType" name="petType">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+      <br />
+      <br />
+      <label for="breed">Breed (Enter "Any" if breed doesn't matter):</label>
+      <input type="text" id="breed" name="breed" />
+      <br />
+      <br />
+      <label for="age">Age:</label>
+      <select id="age" name="age">
+        <option value="cub">Cub: 0-1 year old</option>
+        <option value="young">Young: 1-3 years old</option>
+        <option value="adult">Adult: 3-5 years old</option>
+        <option value="senior">Senior: 5+ years old</option>
+        <option value="any">Any</option>
+      </select>
+      <br />
+      <br />
+      <label for="gender">Preffered Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="any">Any</option>
+      </select>
+      <br />
+      <br />
+      <label>Characteristics: </label>
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        id="alongWithDogs"
+        name="characteristics[]"
+        value="dogs"
+      />
+      <label for="alongWithDogs">Gets along with other dogs</label>
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        id="alongWithCats"
+        name="characteristics[]"
+        value="cats"
+      />
+      <label for="alongWithDogs">Gets along with other cats</label>
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        id="suitableForChildren"
+        name="characteristics[]"
+        value="children"
+      />
+      <label for="suitableForChildren"
+        >Suitable for a family with little children</label
+      >
+      <br />
+      <br />
+    </fieldset>
+    <input type="reset" value="Reset Form" id="resetBtn" />
+    <input type="submit" value="Submit Form" id="submitBtn" />
+  </form>
+</div>

@@ -1,0 +1,27 @@
+<div class="content">
+  <h4>Create Account</h4>
+  <p>Please create an account to access all features.</p>
+  <hr />
+  <p>The username must only contain letters (a-z and A-Z) and numbers (0-9).</p>
+  <p>
+    The password must be at least 4 characters long and have at least one letter
+    (a-z and A-Z) and one digit (0-9). No other characters allowed.
+  </p>
+  <form
+    action="/register-account"
+    method="post"
+    onsubmit="return validateRegistration()"
+  >
+    <fieldset>
+      <legend><strong>Register</strong></legend>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" />
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+    </fieldset>
+    <br />
+    <input type="submit" value="Create Account" id="submitBtn" />
+  </form>
+</div>

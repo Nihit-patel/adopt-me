@@ -1,0 +1,106 @@
+<div class="content">
+  <h4>Have a Pet to Give Away?</h4>
+  <p>
+    At Nihit's Adoption Center, we find the right person to take care of your
+    fluffy friend. Give your pet to a wonderful and cozy household.
+  </p>
+  <hr />
+  <h4>Pet Giveaway Form</h4>
+  <p>
+    Please fill out the following form with the details about your pet that you
+    are giving away.
+  </p>
+
+  <form
+    action="/pet-giveaway-form"
+    method="post"
+    onsubmit="return validateFormPet_Giveaway()"
+  >
+    <fieldset>
+      <legend><strong>Pet Details</strong></legend>
+      <label for="petType">Pet Type:</label>
+      <select id="petType" name="petType">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+      <br />
+      <br />
+      <label for="breed">Breed (Inlcude a mixed breed):</label>
+      <input type="text" id="breed" name="breed" />
+      <br />
+      <br />
+      <label for="age">Age:</label>
+      <select id="age" name="age">
+        <option value="cub">Cub: 0-1 year old</option>
+        <option value="young">Young: 1-3 years old</option>
+        <option value="adult">Adult: 3-5 years old</option>
+        <option value="senior">Senior: 5+ years old</option>
+      </select>
+      <br />
+      <br />
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br />
+      <br />
+      <label>Characteristics:</label>
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        id="alongWithDogs"
+        name="characteristics[]"
+        value="dogs"
+      />
+      <label for="alongWithDogs">Gets along with other dogs</label>
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        id="alongWithCats"
+        name="characteristics[]"
+        value="cats"
+      />
+      <label for="alongWithCats">Gets along with other cats</label>
+      <br />
+      <br />
+      <input
+        type="checkbox"
+        id="suitableForChildren"
+        name="characteristics[]"
+        value="children"
+      />
+      <label for="suitableForChildren"
+        >Suitable for a family with little children</label
+      >
+      <br />
+      <br />
+      <label for="pros"
+        >Pros of owning this pet (Why should someone adopt this pet):</label
+      >
+      <br />
+      <br />
+      <textarea id="pros" name="pros"></textarea>
+    </fieldset>
+    <br />
+    <br />
+    <fieldset>
+      <legend><strong>Owner Details</strong></legend>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" />
+      <br />
+      <br />
+      <label for="familyName">Family Name:</label>
+      <input type="text" name="familyName" id="familyName" />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+      <br />
+    </fieldset>
+    <input type="reset" value="Reset Form" id="resetBtn" />
+    <input type="submit" value="Submit Form" id="submitBtn" />
+  </form>
+</div>

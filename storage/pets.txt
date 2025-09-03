@@ -1,0 +1,11 @@
+1:nihit27:dog:golden retriever:cub:male:dogs,children:This puppy is very playful!
+2:user2:dog:Bulldog:senior:male:dogs,cats,children:Very kind and calm dog!
+3:Aidan:cat:maincoone:adult:female:cats,children:This cat gets along with my toddler really well!
+4:Tamo:dog:blue heeler:young:male:dogs,children:Very energetic!
+5:Tree23:cat:british shorthair:cub:male:dogs,cats,children:Super soft!
+6:TonyS:cat:siamese cat:senior:female:dogs,cats:Very cute!
+7:CR7:dog:Bulldog:adult:male::Loves to go on walks!
+8:CR7:dog:german shepherd:young:female:dogs,children:Most loyal dog.
+9:nihit27:dog:siberian husky:young:female:dogs,cats:Very playful.
+10:WRooney:dog:golden retriever:senior:male:dogs,cats,children:A man's best friend.
+11:nihit27:dog:pug:cub:male:dogs,children:Super Cute!
